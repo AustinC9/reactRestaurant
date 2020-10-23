@@ -3,7 +3,8 @@ import Menucall from "./Menucall";
 import Appetizer from './Appetizer';
 import Special from './Sotd';
 import Sides from './Sides';
-import Header from './Header'
+import Header from './Header';
+import Cap from './Cap'
 import { Accordion, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
@@ -43,7 +44,15 @@ function App(props) {
     Sides
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="3">
-      <Card.Body><Sides /></Card.Body>
+      <Card.Body></Card.Body>
+    </Accordion.Collapse>
+  </Card>
+  <Card>
+    <Accordion.Toggle as={Card.Header} eventKey="4">
+    Anthony Special
+    </Accordion.Toggle>
+    <Accordion.Collapse eventKey="4">
+      <Card.Body><Cap /></Card.Body>
     </Accordion.Collapse>
   </Card>
 </Accordion>
